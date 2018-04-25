@@ -1,0 +1,13 @@
+h1{
+	background-color: #2ECC71;
+	float: left;
+}
+p{
+	background-color: #27AE60;
+	float: right;
+	position: relative;
+}
+span{
+	display: block;
+	position: absolute;
+}
