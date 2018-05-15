@@ -1,0 +1,31 @@
+html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+.media{
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+#container{
+	width: 70%;
+	min-width: 768px;
+	margin: 0 auto;
+}
+.navbar-brand{
+	font-size: 2rem;
+}
+.form-inline{
+	float: right;
+}
+#first-page{
+	text-align: center;
+	width:400px;
+    height:500px;
+    position: absolute;
+    left: -webkit-calc(45% - 100px);
+    top: -webkit-calc(35% - 100px);
+}
+#first-page button{
+	margin-top: 80px;
+}
