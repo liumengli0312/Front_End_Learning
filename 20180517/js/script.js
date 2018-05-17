@@ -53,6 +53,18 @@ document.getElementById('first-page').style.display='none';
  
 document.getElementById('show').style.display='none';//show的display属性设置为none（隐藏）
  
-}
+};
  
+};
+
+function change(){
+	window.location.href="change.html"
 }
+
+function su(){
+	alert("订阅成功");
+};
+
+function re(){
+	window.history.re(-1);
+};

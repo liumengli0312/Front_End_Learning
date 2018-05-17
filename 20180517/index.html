@@ -23,8 +23,8 @@
 			</form>
 		</nav>
 		<!-- bootstrap media代码:产生图片加文字 -->
-			<div class="media" ng-repeat="item in book" >
-		  		<img class="align-self-center mr-3" ng-src="{{item.img}}" alt="Generic placeholder image" width="120px" height="90px">
+			<div class="media" ng-repeat="item in book">
+		  		<img class="align-self-center mr-3" ng-src="{{item.img}}" alt="Generic placeholder image" width="120px" height="90px" onclick="change()">
 		  		<div class="media-body">
 		    		<h5 class="mt-0" ng-model="name">{{item.name}}</h5>
 		    		<p id="author" ng-name="author">{{item.author}}</p>

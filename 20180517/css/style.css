@@ -7,7 +7,7 @@ html,body{
 	margin-top: 60px;
 	margin-bottom: 80px;
 }
-#container{
+.container{
 	width: 70%;
 	min-width: 768px;
 	margin: 0 auto;
@@ -28,4 +28,9 @@ html,body{
 }
 #first-page button{
 	margin-top: 80px;
+}
+.card{
+	/*margin-right: auto;
+	margin-left: auto;*/
+	margin:0 auto;
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookbar">
+<head>
+	<meta charset="utf-8">
+	<title>tiaozhuan</title>
+	<link rel="stylesheet" href="lib/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="card" style="width: 60%;" ng-controller="MyCtrl">
+  		<img class="card-img-top" src="images/book0.jpg" alt="Card image cap" >
+  		<div class="card-body">
+    		<h5 class="card-title">百年孤独</h5>
+    		<p class="card-text">简介：作品描写了布恩迪亚家族七代人的传奇故事，以及加勒比海沿岸小镇马孔多的百年兴衰，反映了拉丁美洲一个世纪以来风云变幻的历史。</p>
+    		<a id="dingyue" href="#" class="btn btn-primary" onclick="su()">订阅</a>
+    		<a id="back" href="index.html" class="btn btn-primary" onclick="re()">返回</a>
+    	</div>
+	</div>
+
+ 	<script src="lib/jquery.min.js"></script>
+    <script src="lib/tether.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
