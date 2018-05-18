@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookbar">
+<head>
+	<meta charset="utf-8">
+	<title>图书管理</title>
+	<link rel="stylesheet" href="lib/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 该添加那些css文件 -->
+</head>
+<body ng-controller="MyCtrl">
+	<div  ng-if="first" id="first-page">
+		<img src="images/firstpage.jpg" width="380px" height="380px" ng-click="showdiv()">
+		<button type="button" class="btn btn-secondary" id="switch" ng-click="showdiv()">Welcome BookBar</button>
+	</div>
+
+	<!-- 第一页 -->
+
+	<div class="container" ng-if="show">
+		<nav class="navbar navbar-light bg-light justify-content-between">
+			<a class="navbar-brand" href="#">Book Bar</a>
+			<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
+		  <!-- bootstrap media代码:产生图片加文字 -->
+			<div class="media" ng-repeat="item in book" ng-click="change($event)">
+		  		<img class="align-self-center mr-3" ng-src="{{item.img}}" alt="Generic placeholder image" width="120px" height="90px"">
+		  		<div class="media-body">
+		    		<h5 class="mt-0" ng-model="name">{{item.name}}</h5>
+		    		<p id="author" ng-name="author">{{item.author}}</p>
+		    		<p class="mb-0" ng-model="introdution">{{item.introduction}}</p>
+		  		</div>
+			</div>
+	</div>
+
+	<!-- 跳转的页面 -->
+	<div  ng-if="show1">
+		<div class="card" style="width: 60%; ">
+	  		<img class="card-img-top" ng-src="{{threePage.img}}" alt="Card image cap" >
+	  		<div class="card-body">
+	    		<h5 class="card-title">{{threePage.name}}</h5>
+	    		<p class="card-text">{{threePage.introduction}}</p>
+	    		<a id="dingyue" href="#" class="btn btn-primary" ng-click="su($event)">订阅</a>
+	    		<a id="back" href="#" class="btn btn-primary" ng-click="re($event)">返回</a>
+	    	</div>
+	    </div>
+	</div>
+
+			
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/tether.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service.js" "></script>
+    <script src="js/script.js"></script>      
+    <!-- (什么时候用什么js文件？) -->
+</body>
+</html>
